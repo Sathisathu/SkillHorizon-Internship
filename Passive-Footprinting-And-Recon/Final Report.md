@@ -17,7 +17,8 @@ A `whois` lookup was performed to gather domain registration details.
 - **Expiration Date:** 2025-11-14
 - **Name Servers:** `otto.ns.cloudflare.com`, `alexandra.ns.cloudflare.com`
 
-![WHOIS Lookup Results](img/whois.png)
+
+<img src="img/whois.png" alt="WHOIS Lookup Results" width="75%">
 
 ### DNS Records
 
