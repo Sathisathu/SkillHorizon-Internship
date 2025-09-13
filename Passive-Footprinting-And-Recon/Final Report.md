@@ -33,7 +33,7 @@ A `whois` lookup was performed to gather domain registration details.
 
 
 <img src="img/dig.png" alt="DIG Results" width="75%">
-<img src="img/nslookup.png" alt="NSLOOKUP Results" width="75%">
+<img src="img/nsLookup.png" alt="NSLOOKUP Results" width="75%">
 
 ---
 
