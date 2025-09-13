@@ -31,8 +31,9 @@ A `whois` lookup was performed to gather domain registration details.
   - An SPF record was found: `v=spf1 include:_spf.google.com include:_spf.salesforce.com ~all`, authorizing email sending from Google and Salesforce.
   - Several verification codes for services like Google Site Verification, HackerOne, and Slack were also present, confirming their use.
 
-![DIG Results](img/dig.png)
-![NSLOOKUP Results](img/nsLookup.png)
+
+<img src="img/dig.png" alt="DIG Results" width="75%">
+<img src="img/nslookup.png" alt="NSLOOKUP Results" width="75%">
 
 ---
 
@@ -52,7 +53,7 @@ Passive subdomain enumeration was conducted using `subfinder`, `assetfinder` and
 - `security.projectdiscovery.io`
   [View more](files/activeSubDomains.txt)
 
-![SUB-DOMAIN LOOKUP Results](img/subDomainLookups.png)
+<img src="img/subDomainLookups.png" alt="SUB-DOMAIN LOOKUP Results" width="75%">
 
 ---
 
@@ -69,13 +70,13 @@ The `theHarvester` tool was used to gather publicly available email addresses.
 - `security@projectdiscovery.io`
 - `templates@projectdiscovery.io`
 
-## ![Harvester Report](img/harvesterReport.png)
+<img src="img/harvesterReport.png" alt="Harvester Report" width="75%">
 
 ## 5. Metadata Extraction
 
 An attempt was made to find and analyze metadata from publicly available documents using `metagoofil`. The tool did not find any downloadable files of types PDF, DOCX, or XLSX. Therefore, no metadata could be extracted from documents.
 
-![Meta Data Report](img/metaDataExtraction.png)
+<img src="img/metaDataExtraction.png" alt="Meta Data Report" width="75%">
 
 ---
 
@@ -91,8 +92,8 @@ Several Google Dorks were executed to find indexed files and potentially sensiti
 
 While no sensitive documents were found, the dorks revealed the locations of administrative interfaces and documentation.
 
-![Google Dorking Results-1](img/googleDorking.png)
-![Google Dorking Results-2](img/googleDorking2.png)
+<img src="img/googleDorking.png" alt="Google Dorking Results-1" width="75%">
+<img src="img/googleDorking2.png" alt="Google Dorking Results-2" width="75%">
 
 ---
 
@@ -103,6 +104,7 @@ Open Source Intelligence gathering confirms that ProjectDiscovery has a signific
 - **GitHub:** The company is a verified organization on GitHub and maintains a large number of popular open-source security tool repositories. This is a core part of their brand and community engagement.
 - **LinkedIn:** The company's LinkedIn profile identifies them as a Computer and Network Security firm with 11-50 employees, headquartered in San Francisco. Key employees and investors are publicly listed.
   ![OSINT Results](img/osint.png)
+<img src="img/osint.png" alt="OSINT Results" width="75%">
 
 ---
 
