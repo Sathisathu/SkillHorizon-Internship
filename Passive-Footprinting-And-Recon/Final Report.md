@@ -103,7 +103,6 @@ Open Source Intelligence gathering confirms that ProjectDiscovery has a signific
 
 - **GitHub:** The company is a verified organization on GitHub and maintains a large number of popular open-source security tool repositories. This is a core part of their brand and community engagement.
 - **LinkedIn:** The company's LinkedIn profile identifies them as a Computer and Network Security firm with 11-50 employees, headquartered in San Francisco. Key employees and investors are publicly listed.
-  ![OSINT Results](img/osint.png)
 <img src="img/osint.png" alt="OSINT Results" width="75%">
 
 ---
