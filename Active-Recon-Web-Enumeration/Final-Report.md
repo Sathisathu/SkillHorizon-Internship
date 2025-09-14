@@ -59,7 +59,7 @@ nmap -sV -p 22,80,443 -sC testfire.net
 - **Ports 80 & 443/tcp:** Both ports are running **Apache Tomcat/Coyote JSP engine 1.1**.
 - **SSL Certificate:** The certificate on port 443 is issued to `demo.testfire.net`, showing a name mismatch with the target domain.
 
-<img src="img/nmap-sv-common-ports.png" alt="Nmap Service Scan on Common Ports" width="700">
+<img src="img/nmap-sV-common-ports.png" alt="Nmap Service Scan on Common Ports" width="700">
 
 ### c) Comprehensive Full Port Scans
 
@@ -178,3 +178,4 @@ This active reconnaissance scan of `testfire.net` has revealed several key findi
 3.  **Insecure HTTP Methods:** The server has **`PUT`** and **`DELETE`** methods enabled.
 
 4.  **Weak Security Configuration:** The lack of basic security headers (`X-Frame-Options`, `X-Content-Type-Options`) indicates a poor security posture and could make the application susceptible to client-side attacks.
+
