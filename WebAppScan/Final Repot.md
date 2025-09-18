@@ -48,9 +48,9 @@ The `dirb` tool was used to discover directories and files using the `common.txt
 
 **Command:**
 ```bash
-```
-dirb http://zero.webappsecurity.com/
 
+dirb http://zero.webappsecurity.com/
+```
 
 **Key Directories Found:**
 *   `/admin` (CODE: 302)
@@ -103,14 +103,12 @@ The ZAP baseline scan was performed to passively identify vulnerabilities withou
 
 ## 4. Conclusion & Identified Attack Surfaces
 
-This automated scan has identified several actionable vulnerabilities and misconfigurations. The primary attack surfaces are:
 
-1.  **Outdated and Vulnerable Components:** The use of **jQuery 1.8.2** is the most critical issue, as it is vulnerable to multiple known XSS CVEs. An attacker could exploit this to execute malicious scripts in the browsers of users.
+1.  **Outdated and Vulnerable Components:** The use of **jQuery 1.8.2** is the most critical issue, as it is vulnerable to multiple known XSS CVEs. 
 
 2.  **Weak HTTP Header Security:** The absence of `Content-Security-Policy` and `X-Frame-Options` headers exposes the application to a range of client-side attacks, including XSS and clickjacking.
 
-3.  **Information Leakage:** The server leaks detailed version information in its `Server` header (Apache 2.2.6, OpenSSL 0.9.8e, Tomcat 7.0.70). This information helps an attacker find known exploits for these specific versions.
-
-4.  **Exposed Administrative Interfaces:** The `/admin` and `/manager/html` paths are high-value targets for brute-force and default credential attacks. The discovered `#wp-config.php#` file could also lead to a full database compromise if it contains valid credentials.
-
+3.  **Information Leakage:** The server leaks detailed version information in its `Server` header (Apache 2.2.6, OpenSSL 0.9.8e, Tomcat 7.0.70).
+4.  **Exposed Administrative Interfaces:** The `/admin` and `/manager/html` paths are high-value targets for brute-force and default credential attacks.
 5.  **Risky HTTP Methods:** The enabled `PUT` and `DELETE` methods should be immediately investigated to determine if they allow unauthorized file modification or uploads on the server.
+
