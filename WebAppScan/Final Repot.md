@@ -20,7 +20,7 @@ The target was confirmed to be online.
 *   **Port 8080/tcp:** **OPEN** (http-proxy) - Apache Tomcat/Coyote JSP engine 1.1
 *   **Potentially Risky Methods Found:** `PUT`, `DELETE`, `TRACE`, `PATCH`
 
-<img src="img/nmap-sV.png" alt="Nmap Service Scan" width="700">
+<img src="img/nmap-sV-common-Ports.png" alt="Nmap Service Scan" width="700">
 
 ### b) Web Fingerprinting (WhatWeb & Wappalyzer)
 
@@ -111,4 +111,5 @@ The ZAP baseline scan was performed to passively identify vulnerabilities withou
 3.  **Information Leakage:** The server leaks detailed version information in its `Server` header (Apache 2.2.6, OpenSSL 0.9.8e, Tomcat 7.0.70).
 4.  **Exposed Administrative Interfaces:** The `/admin` and `/manager/html` paths are high-value targets for brute-force and default credential attacks.
 5.  **Risky HTTP Methods:** The enabled `PUT` and `DELETE` methods should be immediately investigated to determine if they allow unauthorized file modification or uploads on the server.
+
 
