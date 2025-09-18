@@ -1,8 +1,8 @@
- Web Application Scanning Report: zero.webappsecurity.com
+## Web Application Scanning Report: zero.webappsecurity.com
 
- 1. Reconnaissance & Discovery
+## 1. Reconnaissance & Discovery
 
-a) Nmap Scans - Host, Port, and Service Discovery
+## a) Nmap Scans - Host, Port, and Service Discovery
 
 A series of Nmap scans were performed to build a profile of the target.
 
@@ -111,6 +111,7 @@ The ZAP baseline scan was performed to passively identify vulnerabilities withou
 3.  **Information Leakage:** The server leaks detailed version information in its `Server` header (Apache 2.2.6, OpenSSL 0.9.8e, Tomcat 7.0.70).
 4.  **Exposed Administrative Interfaces:** The `/admin` and `/manager/html` paths are high-value targets for brute-force and default credential attacks.
 5.  **Risky HTTP Methods:** The enabled `PUT` and `DELETE` methods should be immediately investigated to determine if they allow unauthorized file modification or uploads on the server.
+
 
 
 
