@@ -114,5 +114,3 @@ This automated scan has identified several actionable vulnerabilities and miscon
 4.  **Exposed Administrative Interfaces:** The `/admin` and `/manager/html` paths are high-value targets for brute-force and default credential attacks. The discovered `#wp-config.php#` file could also lead to a full database compromise if it contains valid credentials.
 
 5.  **Risky HTTP Methods:** The enabled `PUT` and `DELETE` methods should be immediately investigated to determine if they allow unauthorized file modification or uploads on the server.
-
-```
