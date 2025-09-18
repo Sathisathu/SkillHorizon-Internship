@@ -1,0 +1,20 @@
+- Nikto v2.5.0/
++ Target Host: zero.webappsecurity.com
++ Target Port: 80
++ GET /: Retrieved access-control-allow-origin header: *.
++ GET /: The anti-clickjacking X-Frame-Options header is not present. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options: 
++ GET /: The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type. See: https://www.netsparker.com/web-vulnerability-scanner/vulnerabilities/missing-content-type-header/: 
++ GET : Server banner changed from 'Apache-Coyote/1.1' to 'Apache/2.2.6 (Win32) mod_ssl/2.2.6 OpenSSL/0.9.8e mod_jk/1.2.40'.
++ OPTIONS OPTIONS: Allowed HTTP Methods: GET, HEAD, POST, PUT, DELETE, TRACE, OPTIONS, PATCH .
++ GET HTTP method ('Allow' Header): 'PUT' method could allow clients to save files on the web server.
++ GET HTTP method ('Allow' Header): 'DELETE' may allow clients to remove files on the web server.
++ GET HTTP method: 'PATCH' may allow client to issue patch commands to server. See RFC-5789.
++ GET /server-status: This reveals Apache information. Comment out appropriate line in the Apache conf file or restrict access to allowed sources. See: OSVDB-561: 
++ GET /admin/: This might be interesting.
++ GET /readme.txt: Uncommon header 'content-disposition' found, with contents: attachment; filename="readme.txt".
++ GET /readme.txt: This might be interesting.
++ GET /admin/index.html: Admin login page/section found.
++ GET /login.html: Admin login page/section found.
++ GET /manager/html: Default Tomcat Manager / Host Manager interface found.
++ GET /manager/status: Default Tomcat Server Status interface found.
++ GET /#wp-config.php#: #wp-config.php# file found. This file contains the credentials.

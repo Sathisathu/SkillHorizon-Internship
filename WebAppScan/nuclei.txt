@@ -1,0 +1,7 @@
+[tomcat-exposed] [http] [info] http://zero.webappsecurity.com/manager/status
+[apache-detect] [http] [info] http://zero.webappsecurity.com ["Apache-Coyote/1.1"]
+[tomcat-detect:version] [http] [info] http://zero.webappsecurity.com/32rLK918ivUadYhDrcbghYQIIm2 ["7.0.70"]
+[tech-detect:font-awesome] [http] [info] http://zero.webappsecurity.com
+[tech-detect:bootstrap] [http] [info] http://zero.webappsecurity.com
+[waf-detect:apachegeneric] [http] [info] http://zero.webappsecurity.com
+[public-tomcat-manager] [http] [info] http://zero.webappsecurity.com/manager/html
