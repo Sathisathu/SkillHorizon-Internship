@@ -48,6 +48,7 @@ The `dirb` tool was used to discover directories and files using the `common.txt
 
 **Command:**
 ```bash
+```
 dirb http://zero.webappsecurity.com/
 
 
