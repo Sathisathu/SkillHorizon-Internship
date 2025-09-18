@@ -1,4 +1,3 @@
-```markdown
 # Web Application Scanning Report: zero.webappsecurity.com
 
 ## 1. Reconnaissance & Discovery
@@ -50,7 +49,7 @@ The `dirb` tool was used to discover directories and files using the `common.txt
 **Command:**
 ```bash
 dirb http://zero.webappsecurity.com/
-```
+
 
 **Key Directories Found:**
 *   `/admin` (CODE: 302)
@@ -114,4 +113,5 @@ This automated scan has identified several actionable vulnerabilities and miscon
 4.  **Exposed Administrative Interfaces:** The `/admin` and `/manager/html` paths are high-value targets for brute-force and default credential attacks. The discovered `#wp-config.php#` file could also lead to a full database compromise if it contains valid credentials.
 
 5.  **Risky HTTP Methods:** The enabled `PUT` and `DELETE` methods should be immediately investigated to determine if they allow unauthorized file modification or uploads on the server.
+
 ```
